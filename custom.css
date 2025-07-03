@@ -1,0 +1,22 @@
+/* Style Each Dashboard Section (by targeting the first button inside each .services-group for the header) */
+.services-group > button {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Add a full-width horizontal line under the Section's Header */
+.services-group > button::after {
+    content: '';
+    display: block;
+    width: 100%; 
+    height: 1px; /* Thickness of the line -- adjust as desired */
+    background-color: #828891; /* Line color -- adjust as desired */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease; /* Make the color change effect nice and smooth */
+}
+
+/* Nice highlight effect on the horizontal line on mouseover (hover) */
+.services-group > button:hover::after {
+    background-color: #fffff9; /* Line color -- adjust as desired */}
